@@ -75,18 +75,22 @@
 
     .nav-links a:hover { color: var(--gold); }
 
-    .dropdown {
-      display: none;
-      position: absolute;
-      background: #1c1c1c;
-      min-width: 170px;
-      border: 1px solid #333;
-      border-radius: 6px;
-      z-index: 999;
-      top: calc(100% + 8px);
-      left: 0;
-      overflow: hidden;
-    }
+   .dropdown {
+  display: none;
+  position: absolute;
+  min-width: 170px;
+  z-index: 999;
+  top: 100%; 
+  left: 0;
+  padding-top: 8px; 
+}
+
+ .dropdown-content-wrapper { 
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 6px;
+  overflow: hidden;
+}
 
     .dropdown a {
       display: block;
@@ -656,14 +660,11 @@
     <div class="hero">
       <h1>Welcome to Pwaa Pwaa Revolution!</h1>
       <p class="hero-sub">Your go-to guide for the World Scholars Cup.</p>
-      <div class="hero-btns">
-        <a href="#" class="btn-hero btn-hero-dark" onclick="showTab('resources')">Browse the guide</a>
-        <a href="#" class="btn-hero btn-hero-outline" onclick="showTab('quiz')">Take a quiz</a>
       </div>
     </div>
 
     <div class="home-intro">
-      <p>One of the fastest rising guides for the World Scholars Cup — made by scholars, for scholars.</p>
+      <p>One of the fastest rising guides for the World Scholars Cup</p>
     </div>
 
     <hr class="section-divider">
@@ -693,7 +694,7 @@
     <div class="home-row">
       <div class="home-row-text">
         <h2>Quizzes</h2>
-        <p>Do you think you know the curriculum well enough? Put yourself to the test.</p>
+        <p>Do you think you know the curriculum well enough? Test yourself!</p>
         <a href="#" class="btn" onclick="showTab('quiz')">Take a quiz →</a>
       </div>
       <img src="https://p0.piqsels.com/preview/334/566/480/omr-sheet-fill-paper.jpg" alt="Quizzes">
